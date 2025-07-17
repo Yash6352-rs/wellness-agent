@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellness Agent</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='indexstyle.css') }}">
+</head>
+<body>
+  <div class="page-title">
+    <h1>🧘 Wellness Agent</h1>
+  </div>
+
+  <div class="form-box">
+    <h3 class="subtitle">
+      Daily wellness check-in to understand your health: healthy, risk, or unhealthy.
+      Get personalized advice instantly!
+    </h3>
+    <form method="POST" action="/result">
+      <label for="sleep">💤 Hours of Sleep</label>
+      <input type="text" name="sleep" required />
+
+      <label for="water">💧 Glasses of Water</label>
+      <input type="text" name="water" required />
+
+      <label for="food">🍎 What did you eat?</label>
+      <input type="text" name="food" required />
+
+      <label for="activity">🏃 Any Activity?</label>
+      <input type="text" name="activity" required />
+
+      <label for="mood">😊 Mood Today</label>
+      <input type="text" name="mood" required />
+
+      <button class="btn-submit" type="submit">Check In</button>
+    </form>
+  </div>
+</body>
+</html>

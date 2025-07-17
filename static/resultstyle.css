@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #dbeafe, #e9d5ff);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #1e1e1e;
+}
+
+/* Page Title (shared) */
+.page-title {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4b0082;
+  letter-spacing: 0.5px;
+}
+
+/* Box Container */
+.form-box {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Description text in result */
+.form-box p {
+  line-height: 1.7;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Subtitle (index only) */
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Labels & Inputs (index only) */
+form label {
+  display: block;
+  font-weight: 600;
+  margin: 15px 0 5px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #9333ea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(147, 51, 234, 0.3);
+}
+
+/* Submit Button (index only) */
+.btn-submit {
+  margin-top: 30px;
+  padding: 14px;
+  background: linear-gradient(to right, #7e22ce, #9333ea);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(to right, #6b21a8, #7e22ce);
+  transform: scale(1.02);
+}
+
+/* Category highlight */
+.category {
+  color: #9333ea;
+  font-weight: bold;
+}
+
+.category-line {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+/* Section dividers */
+.divider {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Buttons (Download & Start Over) */
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 1px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: white;
+  background: #7e22ce;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #6b21a8;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #6b7280;
+}
+
+.btn-secondary:hover {
+  background: #4b5563;
+}
+
+/* Tips List inside result.html */
+.tips-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.tips-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}

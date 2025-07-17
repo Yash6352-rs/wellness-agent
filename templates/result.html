@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wellness Summary</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='resultstyle.css') }}">
+</head>
+<body>
+  <div class="page-title">
+    <h1>🧾 Your Wellness Summary</h1>
+  </div>
+
+  <div class="form-box">
+    <h3 class="category-line">Category: <span class="category">{{ category }}</span></h3>
+    <section class="summary-block">
+      <h3>📄 Summary</h3>
+      <p>{{ summary }}</p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="advice-block">
+      <h3>💡 Advice</h3>
+      {% set lines = advice.split('\n') %}
+      <p>{{ lines[0] }}</p>
+      <p>{{ lines[1] }}</p>
+
+      <ul class="tips-list">
+        <li><strong>Prioritize Sleep:</strong> Aim for 7–9 hours per night. Use a calming routine like a warm bath or light reading.</li>
+        <li><strong>Hydrate and Nourish:</strong> Increase water, add fruits or veggies, and swap junk food with whole foods.</li>
+        <li><strong>Get Moving:</strong> Light activity (walks, stretching) for 15–20 mins daily can improve energy and mood.</li>
+      </ul>
+
+      <p><em>Remember: Small, consistent changes = big impact!</em></p>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="next-step-block">
+      <h3>✅ Next Step</h3>
+      <p>{{ final_tip }}</p>
+    </section>
+
+    <div class="buttons">
+      <a class="btn" href="{{ url_for('download_summary') }}"> Download Summary</a>
+      <a class="btn btn-secondary" href="{{ url_for('start_over') }}"> Start Over</a>
+    </div>
+  </div>
+</body>
+</html>
