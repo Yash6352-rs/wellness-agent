@@ -1,4 +1,4 @@
-# 🧠 Wellness Agent – AI-Powered Daily Health Companion
+#  Wellness Agent – AI-Powered Daily Health Companion
 
 A lightweight, browser-based wellness assistant that provides instant, AI-generated lifestyle feedback based on daily inputs like sleep, hydration, mood, and activity — all without any devices, wearables, or logins.
 
