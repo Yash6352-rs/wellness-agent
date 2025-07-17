@@ -40,9 +40,22 @@ In today’s fast-paced world, people often ignore key wellness habits — leadi
 
 ---
 
-##  Project Structure
+## Project Structure
 
-
+### wellness-agent/
+   -  pycache/ (Python cache (ignored) )
+   -  logs/ ( Stores daily session data in JSON )
+   - static/ (CSS styles)
+      - indexstyle.css
+      - resultstyle.css
+   - templates/
+      - index.html ( Input form page )
+      - result.html ( Output summary page )  
+   - .env ( Environment variables (API key etc.) )
+   - agent_logic.py ( LangGraph agent logic )
+   - app.py ( Flask web server )
+   - requirements.txt
+   - README.md
 
 ---
 
@@ -109,6 +122,13 @@ Create a .env file in the root folder and add your Gemini API key:
 
 <img width="886" height="958" alt="image" src="https://github.com/user-attachments/assets/7a43e580-56b6-4378-a527-07a12f7a6cd1" />
 
+### 3. Summary download button and Start Over button :
+
+- In Summary download button users receive a final wellness tip and can download a detailed summary of their session. This encourages habit tracking and can be shared or saved for reflection.
+- Start Over button return to the input form and begin a new session
+
+<img width="917" height="991" alt="image" src="https://github.com/user-attachments/assets/4fc1b5d6-272a-4fc6-92ce-62c0e53c77a3" />
+
 ---
 
 ## License
@@ -132,6 +152,7 @@ Create a .env file in the root folder and add your Gemini API key:
 - [Email](mailto:yashpanchal1422004@gmail.com)  
 - [LinkedIn Profile](https://www.linkedin.com/in/yash6352-rs/)
 
+---
 
 Feel free to explore, contribute, or reach out for collaboration opportunities!
 
