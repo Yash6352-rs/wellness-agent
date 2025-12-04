@@ -111,7 +111,7 @@ Create a .env file in the root folder and add your Gemini API key:
 
 ### 1. Wellness Input Form 
 
-- This is the initial screen where users enter their daily wellness data — including sleep, water intake, food, activity, and mood. It’s clean, mobile-friendly, and quick to use.
+- This is the initial screen where users enter their daily wellness data — including sleep, water intake, food, activity, and mood. It’s clean and quick to use.
   
 <img width="904" height="848" alt="image" src="https://github.com/user-attachments/assets/e21aef55-da68-4291-b5d7-589fe49544d8" />
 
